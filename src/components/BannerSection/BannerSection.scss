@@ -1,0 +1,70 @@
+@import '../../scss/variables.scss';
+
+.bannerSection {
+    display: grid;
+    grid-template-columns: .6fr .4fr;
+
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 10rem;
+    background-color: $color-primary-dark;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.introText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    width: 80%;
+    margin: auto 0;
+
+    &__salutation {
+        font-family: $font-poppins;
+        font-size: 2.2rem;
+        color: $color-white-dull;
+        // padding: 1rem 2rem;
+        // border-radius: 5px;
+        // background-color: rgba($color-secondary, .5);
+        // clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 74% 83%, 68% 100%, 60% 82%, 0 82%);
+    }
+
+    &__name {
+        font-family: $font-poppins;
+        font-size: 6rem;
+        font-weight: bolder;
+        color: $color-tertiary;
+        text-transform: uppercase;
+        line-height: 1.1;
+    }
+
+    &__title {
+        font-family: $font-poppins;
+        font-size: 2.2rem;
+        color: $color-white-dull;
+    }
+
+    &__bio {
+        font-family: $font-poppins;
+        font-size: 1.4rem;
+        color: $color-white-dull;
+        padding-top: 1rem;
+    }
+}
+
+.bannerImg {
+    height: 55rem;
+    display: block;
+    margin-left: auto;
+    padding-top: 2rem;
+}
