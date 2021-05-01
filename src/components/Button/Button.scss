@@ -1,6 +1,7 @@
 @import '../../scss/variables.scss';
 
 .button {
+    min-width: 15rem;
     font-size: 1.7rem;
     font-family: $font-poppins;
     text-align: center;
@@ -9,6 +10,7 @@
     border-radius: 5px;
     border: none;
     background-color: $color-tertiary;
+    transition: color .3s, background-color .3s, curor .3s;
 
     &:active,
     &:focus,

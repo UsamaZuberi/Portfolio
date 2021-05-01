@@ -62,9 +62,31 @@
     }
 }
 
+.bannerButtons {
+    display: flex;
+    gap: 2rem;
+}
+
 .bannerImg {
     height: 55rem;
     display: block;
     margin-left: auto;
     padding-top: 2rem;
+}
+
+.mouseScroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    right: 50%;
+
+    font-size: 3rem;
+    color: $color-white-dull;
+    transition: font-size .3s;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        font-size: 3.5rem;
+    }
 }

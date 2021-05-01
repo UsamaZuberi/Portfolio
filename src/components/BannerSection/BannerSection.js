@@ -21,14 +21,21 @@ function BannerSection() {
                     <span className="introText__title">Front-end Web Developer</span>
                     <span className="introText__bio">I design beautiful, engaging user experiences and intuitive user interfaces for the web. I pride myself on reliable communication and being an easy to work with , friendly guy.</span>
 
-                    <a href={CV} download="Muhammad_Usama_Zuberi_CV.pdf">
-                        <Button type="button" text="Download CV" onClick={() => { }} />
-                    </a>
+                    <div className="bannerButtons">
+                        <a href={CV} download="Muhammad_Usama_Zuberi_CV.pdf">
+                            <Button type="button" text="Download CV" onClick={() => { }} />
+                        </a>
+
+                        <a href="mailto:usama.zuberi1010@gmail.com">
+                            <Button type="button" text="Email Me" onClick={() => { }} />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="bannerSection__right">
                 <img src={BannerImage} alt="Muhammad Usama Zuberi" className="bannerImg" />
             </div>
+            <a href="./" className="mouseScroll"><i class="fas fa-angle-double-down"></i></a>
         </section>
     )
 }
