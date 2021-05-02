@@ -1,0 +1,31 @@
+@import '../../scss/variables.scss';
+@import '../../scss/utilities.scss';
+
+.portfolioSection {
+    background-color: $color-primary;
+    min-height: 100vh;
+    padding: 2rem 10rem;
+}
+
+.emailLink {
+    color: $color-tertiary;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: color .3s, border-bottom .3s;
+
+    &:focus,
+    &:hover {
+        color: $color-white-dull;
+        border-bottom: 1px solid $color-tertiary;
+        outline: none;
+    }
+}
+
+.cardsGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4.5rem;
+
+    padding: 8rem 0;
+}
