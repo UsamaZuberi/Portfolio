@@ -1,0 +1,133 @@
+@import '../../scss//variables.scss';
+@import '../../scss//utilities.scss';
+
+.contactSection {
+    font-family: $font-poppins;
+    background-color: $color-primary-dark;
+    min-height: 100vh;
+    padding: 2rem 10rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+
+
+    &__detailBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-tertiary;
+    }
+
+    &__info a {
+        font-size: 1.7rem;
+        color: $color-white-dull;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-white-dull;
+    }
+
+    &__social {
+        display: flex;
+        gap: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    &__form {
+        padding: 5rem 0;
+    }
+}
+
+.roundIcon {
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    font-size: 2rem;
+    color: $color-tertiary;
+    text-align: center;
+    line-height: 4.8rem;
+    border-radius: 50%;
+    border: 2px solid $color-tertiary;
+    background-color: $color-white-dull;
+    transition: color .3s, border .3s, background-color .3s, cursor .3s;
+
+    &:active,
+    &:focus,
+    &:hover {
+        outline: none;
+        color: $color-white-dull;
+        border: 2px solid $color-white-dull;
+        background-color: $color-tertiary;
+        cursor: pointer;
+    }
+}
+
+.form {
+    width: 100%;
+    font-family: inherit;
+    max-width: 55rem;
+    height: 100%;
+    margin-left: auto;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    background-color: $color-white-dull;
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding: 2rem 0;
+        color: $color-tertiary;
+    }
+
+    &__group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 1.6rem;
+        color: $color-primary-dark;
+        padding: 1rem;
+        border: none;
+        border-bottom: 2px solid $color-tertiary;
+        outline: none;
+    }
+
+    &__message {
+        resize: none;
+        width: 100%;
+        overflow: auto;
+        font-size: 1.6rem;
+        padding: 1rem;
+        // border-radius: 5px;
+        // border: 2px solid $color-tertiary;
+        border: none;
+        border-bottom: 2px solid $color-tertiary;
+        outline: none;
+        margin-bottom: 2rem;
+    }
+
+    &__btn{
+        text-align: right;
+    }
+}

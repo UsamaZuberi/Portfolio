@@ -8,14 +8,15 @@
     color: $color-white-dull;
     padding: 1rem 2rem;
     border-radius: 5px;
-    border: none;
+    border: 2px solid transparent;
     background-color: $color-tertiary;
-    transition: color .3s, background-color .3s, curor .3s;
+    transition: color .3s, border .3s, background-color .3s, curor .3s;
 
     &:active,
     &:focus,
     &:hover {
         color: $color-tertiary;
+        border: 2px solid $color-tertiary;
         background-color: $color-white-dull;
         cursor: pointer;
         outline: none;

@@ -1,0 +1,10 @@
+@import '../../scss/variables.scss';
+
+.footer {
+    font-size: 1.5rem;
+    color: $color-white-dull;
+    padding: 3rem;
+    border-top: 1px solid $color-primary;
+    background-color: $color-primary-dark;
+    text-align: center;
+}
