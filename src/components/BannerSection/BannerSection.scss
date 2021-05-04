@@ -20,6 +20,9 @@
         position: relative;
         overflow: hidden;
         z-index: 10;
+
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -29,7 +32,7 @@
     align-items: flex-start;
     gap: 1.5rem;
 
-    width: 80%;
+    // width: 80%;
     font-family: $font-poppins;
     color: $color-white-dull;
     margin: auto 0;
@@ -56,6 +59,7 @@
     }
 
     &__bio {
+        max-width: 80%;
         font-family: inherit;
         font-size: 1.4rem;
         color: inherit;
@@ -72,7 +76,7 @@
     height: 55rem;
     display: block;
     margin-left: auto;
-    padding-top: 2rem;
+    // padding-top: 2rem;
 }
 
 .mouseScroll {

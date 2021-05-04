@@ -30,16 +30,17 @@ function ContactSection() {
                         <a href="https://goo.gl/maps/LJ7cLaTn9qMTeJpA9" className="roundIcon"><i class="fas fa-map-marker-alt"></i></a>
                         <div>
                             <div className="contact__name">Address</div>
-                            <div className="contact__info"><a href="https://goo.gl/maps/LJ7cLaTn9qMTeJpA9" target="_blank">Karachi, Pakistan</a></div>
+                            <div className="contact__info"><a href="https://goo.gl/maps/LJ7cLaTn9qMTeJpA9" rel="noreferrer" target="_blank">Karachi, Pakistan</a></div>
                         </div>
                     </div>
 
                     <div >
                         <h4 className="contact__heading">Connect with me</h4>
                         <div className="contact__social">
-                            <a href="https://www.facebook.com/muhammadusama.zuberi" className="roundIcon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.linkedin.com/in/muhammadusamazuberi/" className="roundIcon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.twitter.com/usamazuberi" className="roundIcon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/muhammadusama.zuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammadusamazuberi/" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.twitter.com/usamazuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.github.com/usamazuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@ function ContactSection() {
                         </div>
                         <div className="form__group">
                             {/* <label htmlFor="message" className="form__label">Email</label> */}
-                            <textarea name="formMessage" id="" cols="30" rows="4" id="message" className="form__message" placeholder="Type your message here..."></textarea>
+                            <textarea name="formMessage" id="message" cols="30" rows="4" className="form__message" placeholder="Type your message here..."></textarea>
                         </div>
                         <div className="form__btn">
                             <Button type="submit" text="Send" onClick={() => { }} />

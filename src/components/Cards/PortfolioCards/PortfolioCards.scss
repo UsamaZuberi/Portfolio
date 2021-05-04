@@ -7,28 +7,31 @@
     -moz-perspective: 150rem;
     position: relative;
 
-    width: 35rem;
-    height: 25rem;
+    width: 30rem;
+    height: 23rem;
     font-family: $font-poppins;
+    box-shadow: 1px 1px 5px solid $color-black;
 
     &__side {
         position: absolute;
         top: 0;
         left: 0;
 
-        width: 35rem;
-        height: 25rem;
+        width: 30rem;
+        height: 23rem;
         padding: 2rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 1.5rem;
         box-shadow: 0 1.5rem 4rem $color-primary-dark;
+        background-color: $color-primary-dark;
         overflow: hidden;
         transition: all .8s ease;
 
         &--front {
             color: $color-white-dull;
-            background-image: linear-gradient(to right bottom, $color-secondary, $color-tertiary);
+            background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-dark);
+            background-blend-mode: screen;
         }
 
         &--back {
@@ -54,7 +57,7 @@
         align-items: center;
 
         img {
-            width: 28rem;
+            width: 80%;
             height: auto;
         }
     }
@@ -88,9 +91,10 @@
     }
 
     &__description {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: bold;
         color: $color-primary-dark;
+        text-align: center;
     }
 
     &__projectLink {
