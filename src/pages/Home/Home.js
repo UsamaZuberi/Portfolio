@@ -15,7 +15,7 @@ function Home() {
         let scrollTop = document.getElementById("scrollTop");
 
         if (scrollTop) {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
                 setShow(true);
 
             } else {
@@ -30,19 +30,22 @@ function Home() {
             <PortfolioSection />
             <ContactSection />
             <div className="footer">
-                Copyright&copy; 2021 Muhammad Usama Zuberi. All rights reserved.
+                Copyright&copy; 2021 Muhammad Usama Zuberi
+                <br />
+                All rights reserved.
             </div>
-            <div id="scrollTop" className={`scrollTop ${show ? "show" : ""}`}>
-                <Link
-                    activeClass="active"
-                    to="bannerSection"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >
+
+            <Link
+                activeClass="active"
+                to="bannerSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                <div id="scrollTop" className={`scrollTop ${show ? "show" : ""}`}>
                     <i class="fas fa-chevron-up"></i>
-                </Link>
-            </div>
+                </div>
+            </Link>
         </div>
     )
 }
