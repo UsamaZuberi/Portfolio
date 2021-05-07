@@ -19,9 +19,9 @@ function PortfolioSection() {
             <p className="section-intro">Here are a few projects I've worked on recently. Want to see more? <a href="mailto:usama.zuberi1010@gmail.com" className="emailLink" title="usama.zuberi1010@gmail.com">Email me</a></p>
 
             <div className="cardsGallery">
-                <PortfolioCards logo={Pixtool} title="Pixtool" description="A Saas for video editing, sharing & stage simulation." link="https://pixtool-66579.firebaseapp.com/home"/>
-                <PortfolioCards logo={SevenStarTraining} title="7 Star Training" description="A Saas for apprentiseship trainings." link="https://star-309014.ew.r.appspot.com/"/>
-                <PortfolioCards logo={Novospace} title="Novospace" description="A Saas for Novospace for hardware & products configurations." link="https://www.novo.space/"/>
+                <PortfolioCards logo={Pixtool} title="Pixtool" description="A Saas web app for video editing, sharing & stage simulation." link="https://pixtool-66579.firebaseapp.com/home"/>
+                <PortfolioCards logo={SevenStarTraining} title="7 Star Training" description="A Saas web app for apprentiseship trainings." link="https://star-309014.ew.r.appspot.com/"/>
+                <PortfolioCards logo={Novospace} title="Novospace" description="A Saas web app for Novospace for hardware & products configurations." link="https://novo-back.herokuapp.com/"/>
                 <PortfolioCards logo={EberhardCapital} title="Eberhard Capital" description="Official website of  Eberhard Capital." link="http://eberhardcapital.com/"/>
                 <PortfolioCards logo={EHJAndSJConsultancy} title="EHJ & SJ Contultancy" description="Official website of EHJ & SJ Contultancy." link="https://ehjsjconsultancy.com/"/>
                 <PortfolioCards logo="" title="Cylinder" description="A website for complex daily hot water requirements calculation of people." link="https://cylinder-41ed8.firebaseapp.com/"/>

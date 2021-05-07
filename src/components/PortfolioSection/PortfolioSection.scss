@@ -24,8 +24,12 @@
 .cardsGallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 4.5rem;
+    justify-content: space-around;
+    gap: 2rem;
 
     padding: 8rem 0;
+
+    &>* {
+        margin-bottom: 4rem;
+    }
 }

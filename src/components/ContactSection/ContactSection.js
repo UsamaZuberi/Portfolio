@@ -40,7 +40,7 @@ function ContactSection() {
                             <a href="https://www.facebook.com/muhammadusama.zuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.linkedin.com/in/muhammadusamazuberi/" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://www.twitter.com/usamazuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.github.com/usamazuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.github.com/usamazuberi" target="_blank" rel="noreferrer" className="roundIcon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>

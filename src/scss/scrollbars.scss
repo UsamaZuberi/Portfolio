@@ -1,0 +1,30 @@
+  @import './variables.scss';
+
+  /* Works on Firefox */
+  * {
+      scrollbar-width: thin;
+      scrollbar-color: rgba($color-tertiary, 1) rgba($color-primary-dark, .8);
+  }
+
+  /* Works on Chrome, Opera, Edge, and Safari */
+
+  *::-webkit-scrollbar {
+      width: 1rem;
+      height: 1rem;
+      background-color: rgba($color-primary-dark, 1);
+
+      &-track {
+          border-radius: .5rem;
+          background-color: rgba($color-white-dull, .2);
+      }
+
+      &-thumb {
+          height: 10rem;
+          border-radius: .5rem;
+          background: rgba($color-tertiary, 1);
+      }
+
+      &-corner {
+          background-color: rgba($color-primary-dark, .8);
+      }
+  }
