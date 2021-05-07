@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/breakpoints.scss';
 
 .bannerSection {
     position: relative;
@@ -50,6 +51,14 @@
         color: $color-tertiary;
         text-transform: uppercase;
         line-height: 1.1;
+
+        @include respond(medium-desktop) {
+            font-size: 5.2rem;
+        }
+
+        @include respond(small-desktop) {
+            font-size: 4.5rem;
+        }
     }
 
     &__title {
@@ -96,9 +105,4 @@
         font-size: 3.5rem;
         cursor: pointer;
     }
-
-    /* &>i {
-        position: relative;
-        display: inline-block;
-    } */
 }
