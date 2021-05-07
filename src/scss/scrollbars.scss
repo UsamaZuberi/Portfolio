@@ -3,7 +3,7 @@
   /* Works on Firefox */
   * {
       scrollbar-width: thin;
-      scrollbar-color: rgba($color-tertiary, 1) rgba($color-primary-dark, .8);
+      scrollbar-color: rgba($color-secondary, 1) rgba($color-primary-dark, .8);
   }
 
   /* Works on Chrome, Opera, Edge, and Safari */
@@ -21,7 +21,7 @@
       &-thumb {
           height: 10rem;
           border-radius: .5rem;
-          background: rgba($color-tertiary, 1);
+          background: rgba($color-secondary, 1);
       }
 
       &-corner {

@@ -17,7 +17,7 @@ function BannerSection() {
                     <h1 className="introText__name">Muhammad Usama Zuberi</h1>
                     <span className="introText__title">Front-end Web Developer</span>
                     <span className="introText__bio">I design beautiful, engaging user experiences and intuitive user interfaces for the web. I pride myself on reliable communication and being an easy to work with , friendly guy.</span>
-                    <a href={CV} download="Muhammad_Usama_Zuberi_CV.pdf">
+                    <a href={CV} download="Muhammad_Usama_Zuberi_CV.pdf" className="bannerButtons">
                         <Button type="button" text="Download CV" onClick={() => { }} />
                     </a>
                 </div>

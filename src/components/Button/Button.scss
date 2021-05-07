@@ -9,14 +9,14 @@
     padding: 1rem 2rem;
     border-radius: 5px;
     border: 2px solid transparent;
-    background-color: $color-tertiary;
+    background-color: $color-secondary;
     transition: color .3s, border .3s, background-color .3s, curor .3s;
 
     &:active,
     &:focus,
     &:hover {
-        color: $color-tertiary;
-        border: 2px solid $color-tertiary;
+        color: $color-secondary;
+        border: 2px solid $color-secondary;
         background-color: $color-white-dull;
         cursor: pointer;
         outline: none;

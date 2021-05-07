@@ -1,5 +1,5 @@
-@import '../../../scss/variables.scss';
 @import '../../../scss/breakpoints.scss';
+@import '../../../scss/variables.scss';
 
 .portfolioCards {
 
@@ -89,7 +89,7 @@
 
         &--back {
             font-size: 2rem;
-            color: $color-tertiary;
+            color: $color-secondary;
         }
     }
 
@@ -114,10 +114,10 @@
     &__projectLink {
         font-size: 1.7rem;
         font-weight: bold;
-        color: $color-tertiary;
+        color: $color-secondary;
         padding: 1rem 2rem;
         border-radius: 1.5rem;
-        border: 2px solid $color-tertiary;
+        border: 2px solid $color-secondary;
         transition: color .3s, background-color .3s;
 
         &:active,
@@ -125,7 +125,7 @@
         &:hover {
             font-weight: normal;
             color: $color-white-dull;
-            background-color: $color-tertiary;
+            background-color: $color-secondary;
         }
     }
 }

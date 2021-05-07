@@ -1,6 +1,6 @@
-@import '../../scss/variables.scss';
-@import '../../scss/utilities.scss';
 @import '../../scss/breakpoints.scss';
+@import '../../scss/utilities.scss';
+@import '../../scss/variables.scss';
 
 .portfolioSection {
     background-color: $color-primary;
@@ -14,7 +14,7 @@
 }
 
 .emailLink {
-    color: $color-tertiary;
+    color: $color-secondary;
     font-weight: bold;
     border-bottom: 1px solid transparent;
     transition: color .3s, border-bottom .3s;
@@ -22,7 +22,7 @@
     &:focus,
     &:hover {
         color: $color-white-dull;
-        border-bottom: 1px solid $color-tertiary;
+        border-bottom: 1px solid $color-secondary;
         outline: none;
     }
 }

@@ -50,16 +50,13 @@ function ContactSection() {
                     <form action="" className="form">
                         <h4 className="form__heading">Send Message</h4>
                         <div className="form__group">
-                            {/* <label htmlFor="fullName" className="form__label">Full Name</label> */}
-                            <input type="text" id="fullName" className="form__input" placeholder="Full Name"></input>
+                            <input type="text" id="fullName" className="form__input" placeholder="Full Name" required="true"></input>
                         </div>
                         <div className="form__group">
-                            {/* <label htmlFor="email" className="form__label">Email</label> */}
-                            <input type="email" id="email" className="form__input" placeholder="Email"></input>
+                            <input type="email" id="email" className="form__input" placeholder="Email" required="true"></input>
                         </div>
                         <div className="form__group">
-                            {/* <label htmlFor="message" className="form__label">Email</label> */}
-                            <textarea name="formMessage" id="message" cols="30" rows="4" className="form__message" placeholder="Type your message here..."></textarea>
+                            <textarea name="formMessage" id="message" cols="30" rows="4" className="form__message" placeholder="Type your message here..." required="true"></textarea>
                         </div>
                         <div className="form__btn">
                             <Button type="submit" text="Send" onClick={() => { }} />
