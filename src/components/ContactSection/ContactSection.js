@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 function ContactSection() {
     return (
-        <div className="contactSection">
+        <section id="contactSection" className="contactSection">
             <h2 className="section-heading">Contact</h2>
             <p className="section-intro">I like to create things with fun, open-minded people. Feel free to say hello!</p>
 
@@ -64,7 +64,7 @@ function ContactSection() {
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

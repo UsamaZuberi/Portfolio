@@ -10,7 +10,7 @@ import Button from '../Button/Button';
 function BannerSection() {
 
     return (
-        <section className="bannerSection">
+        <section id="bannerSection" className="bannerSection">
             <div className="bannerSection__left">
                 <div className="introText">
                     <span className="introText__salutation">Hello! I'm</span>

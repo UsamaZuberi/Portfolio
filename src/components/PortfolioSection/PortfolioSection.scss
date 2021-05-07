@@ -17,13 +17,14 @@
     color: $color-secondary;
     font-weight: bold;
     border-bottom: 1px solid transparent;
-    transition: color .3s, border-bottom .3s;
+    transition: color .3s, border-bottom .3s, cursor .3s;
 
     &:focus,
     &:hover {
+        outline: none;
         color: $color-white-dull;
         border-bottom: 1px solid $color-secondary;
-        outline: none;
+        cursor: pointer;
     }
 }
 
