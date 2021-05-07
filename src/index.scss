@@ -1,3 +1,6 @@
+@import './scss/scrollbars.scss';
+@import './scss/breakpoints.scss';
+
 *,
 *::after,
 *::before {
@@ -9,7 +12,26 @@
 html {
   //This defines what 1rem is
   font-size: 62.5%; // 1rem = 10px;     (10/16 = 0.625 = 62.5%)
-  scroll-behavior: smooth;
+
+  // @include respond(phone) {
+  //   font-size: 50%;
+  // }
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 65%;
+  }
+
+  @include respond(huge-desktop) {
+    font-size: 73%;
+  }
 }
 
 body {
