@@ -33,7 +33,7 @@ function BannerSection() {
                 duration={500}
                 className="mouseScroll"
             >
-                <i class="fas fa-angle-double-down"></i>
+                <i className="fas fa-angle-double-down"></i>
             </Link>
         </section>
     )

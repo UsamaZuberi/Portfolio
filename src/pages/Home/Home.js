@@ -43,7 +43,7 @@ function Home() {
                 duration={500}
             >
                 <div id="scrollTop" className={`scrollTop ${show ? "show" : ""}`}>
-                    <i class="fas fa-chevron-up"></i>
+                    <i className="fas fa-chevron-up"></i>
                 </div>
             </Link>
         </div>
