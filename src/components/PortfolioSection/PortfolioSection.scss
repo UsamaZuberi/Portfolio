@@ -7,7 +7,6 @@
     min-height: 100vh;
     padding: 2rem 10rem;
 
-
     @include respond(phone) {
         padding: 2rem 4rem;
     }
@@ -38,5 +37,15 @@
 
     &>* {
         margin-bottom: 4rem;
+
+        @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+            @include respond(phone) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
     }
 }

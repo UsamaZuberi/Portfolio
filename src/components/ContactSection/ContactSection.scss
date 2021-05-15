@@ -17,6 +17,7 @@
 .contact {
     display: grid;
     grid-template-columns: .5fr .5fr;
+    gap: 2rem;
 
     @include respond(tab-port) {
         display: flex;
@@ -42,14 +43,22 @@
     }
 
     &__detailSeperator {
-        // animation-name: moveInRight;
-        // animation-duration: 1.5s;
-        // animation-timing-function: ease-out;
+        @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+            padding-bottom: 3rem;
+        }
 
         @include respond(tab-port) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 4rem;
+        }
+
+        &>*:last-child {
+            @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+                @include respond(tab-port) {
+                    margin-right: 2rem;
+                }
+            }
         }
 
         @include respond(phone) {
@@ -58,12 +67,26 @@
             justify-content: center;
             gap: 0;
         }
+
+        &>*:last-child {
+            @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+                @include respond(phone) {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
     &__detail {
         display: flex;
         align-items: center;
         gap: 3rem;
+
+        &>* {
+            @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+                margin-right: 3rem;
+            }
+        }
 
         @include respond(phone) {
             gap: 1.5rem;
@@ -94,9 +117,6 @@
     }
 
     &__socialBox {
-        // animation-name: moveInLeft;
-        // animation-duration: 1.5s;
-        // animation-timing-function: ease-out;
 
         @include respond(tab-port) {
             text-align: center;
@@ -114,6 +134,13 @@
         gap: 2rem;
         padding-top: 1.5rem;
 
+        &>*:not(:last-child) {
+
+            @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+                margin-right: 2rem;
+            }
+        }
+
         @include respond(tab-port) {
             justify-content: center;
         }
@@ -121,6 +148,7 @@
         @include respond(phone) {
             gap: 1.5rem;
         }
+
     }
 
     &__form {

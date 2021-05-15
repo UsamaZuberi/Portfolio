@@ -1,6 +1,8 @@
 @import '../../scss/variables.scss';
 
 .button {
+    appearance: none;
+
     min-width: 15rem;
     font-size: 1.7rem;
     font-family: $font-poppins;
