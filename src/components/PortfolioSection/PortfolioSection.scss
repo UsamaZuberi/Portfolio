@@ -38,7 +38,7 @@
     &>* {
         margin-bottom: 4rem;
 
-        @supports not ((gap: 2rem) or (-webkit-gap: 2rem)) {
+        @supports not (gap: 2rem) {
             margin-left: 2rem;
             margin-right: 2rem;
 
