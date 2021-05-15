@@ -31,21 +31,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2rem;
-
     padding: 8rem 0;
 
     &>* {
         margin-bottom: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
 
-        @supports not (gap: 2rem) {
-            margin-left: 2rem;
-            margin-right: 2rem;
+        @include respond(phone) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 
-            @include respond(phone) {
-                margin-left: 0;
-                margin-right: 0;
-            }
+    @supports (gap: 2rem) {
+        gap: 2rem;
+
+        &>* {
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }

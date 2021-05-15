@@ -17,7 +17,6 @@
 .contact {
     display: grid;
     grid-template-columns: .5fr .5fr;
-    gap: 2rem;
 
     @include respond(tab-port) {
         display: flex;
@@ -25,7 +24,6 @@
         align-items: center;
         padding-bottom: 4rem;
     }
-
 
     &__detailBox {
         display: flex;
@@ -38,25 +36,35 @@
         }
 
         @include respond(phone) {
-            gap: 6rem;
+            gap: 2rem;
         }
     }
 
     &__detailSeperator {
-        @supports not (gap: 2rem) {
-            padding-bottom: 3rem;
+        padding-bottom: 3rem;
+
+        @supports (gap: 2rem) {
+            padding-bottom: 0;
+        }
+
+        &>*:not(:last-child) {
+            margin-bottom: 2rem;
         }
 
         @include respond(tab-port) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 4rem;
-        }
 
-        &>*:last-child {
-            @supports not (gap: 2rem) {
-                @include respond(tab-port) {
-                    margin-right: 2rem;
+            &>*:not(:last-child) {
+                margin-right: 4rem;
+                margin-bottom: 0;
+            }
+
+            @supports (gap: 2rem) {
+                gap: 4rem;
+
+                &>*:not(:last-child) {
+                    margin-right: 0;
                 }
             }
         }
@@ -65,12 +73,17 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 0;
-        }
 
-        &>*:last-child {
-            @supports not (gap: 2rem) {
-                @include respond(phone) {
+            padding-bottom: 2rem;
+
+            &>*:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            @supports (gap: 2rem) {
+                gap: 2rem;
+
+                &>*:not(:last-child) {
                     margin-right: 0;
                 }
             }
@@ -80,20 +93,17 @@
     &__detail {
         display: flex;
         align-items: center;
-        gap: 3rem;
 
-        &>* {
-            @supports not (gap: 2rem) {
-                margin-right: 3rem;
+        &>:first-child {
+            margin-right: 3rem;
+        }
+
+        @supports (gap: 2rem) {
+            gap: 3rem;
+
+            &>:first-child {
+                margin-right: 0;
             }
-        }
-
-        @include respond(phone) {
-            gap: 1.5rem;
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 3rem;
         }
     }
 
@@ -131,13 +141,17 @@
 
     &__social {
         display: flex;
-        gap: 2rem;
         padding-top: 1.5rem;
 
         &>*:not(:last-child) {
+            margin-right: 2rem;
+        }
 
-            @supports not (gap: 2rem) {
-                margin-right: 2rem;
+        @supports (gap: 2rem) {
+            gap: 2rem;
+
+            &>*:not(:last-child) {
+                margin-right: 0;
             }
         }
 
@@ -146,9 +160,18 @@
         }
 
         @include respond(phone) {
-            gap: 1.5rem;
-        }
+            &>*:not(:last-child) {
+                margin-right: 1.5rem;
+            }
 
+            @supports (gap: 2rem) {
+                gap: 1.5rem;
+
+                &>*:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
     &__form {
